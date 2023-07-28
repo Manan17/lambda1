@@ -26,7 +26,7 @@ if (process.env.ENVIRONMENT === "lambda") {
 
 const apiGenerator = function (className) {
   const key = className;
-  return `http://localhost:3005/dev/fetch/${key}`;
+  return `https://lambda3.vercel.app/dev/fetch/${key}`;
 };
 
 const classGenerator = function (engineName, engineID) {
